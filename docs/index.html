@@ -1,517 +1,496 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta charset="UTF-8">
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Serif+Text|Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gamja+Flower|Gugi|Noto+Serif+KR|Stylish|Sunflower:300"
+      rel="stylesheet"
+    />
+    <link 
+      href="https://fonts.googleapis.com/css?family=Dosis:400,500" 
+      rel="stylesheet"
+    />
+    <link 
+      href="https://fonts.googleapis.com/css?family=Great+Vibes" 
+      rel="stylesheet"
+    />
     <script src="js/main.js" defer></script>
-    <!-- jQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+    <meta charset="UTF-8" />
+    <meta property="og:image" content="./images/main-background.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- nanogallery2 -->
-    <link  href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-    <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-    <title>이정표와 장은선의 결혼식</title>
-    <meta content="이정표와 장은선의 결혼식에 와서 축하해주세요~!" name="description"/>
-    <meta property="og:image" content="images/pic2.jpeg">
-    <link href="images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-    <link href="images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-    <link href="images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-    <link href="css/ekko-lightbox.css" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Gugi|Noto+Serif+KR|Stylish|Sunflower:300"
-          rel="stylesheet">
-    <!-- <script src="https://code.jquery.com/jquery-2.2.1.js"></script> -->
+<!--&lt;!&ndash;    github cache&ndash;&gt;-->
+<!--    <meta http-equiv='cache-control' content='no-cache'>-->
+<!--    <meta http-equiv='expires' content='0'>-->
+<!--    <meta http-equiv='pragma' content='no-cache'>-->
 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="images/favicon/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="images/favicon/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="images/favicon/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/calendar.css" />
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.js" type="text/javascript"></script>
-    <!--  From seongun-bosel-wedding -->
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <meta name = "format-detection" content = "telephone=no">
-  
-</head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- nanogallery2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"
+    ></script>
 
-<body id="top">
-<header></header>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2"></script>
-<div class="page-content">
-    <div class="div">
-        <div class="ww-home-page" id="home">
-            <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
-                <div class="container ww-announcement-container">
-                    <p class="ww-couple-name ww-title" style="font-size:4.0em">Jungpyo & Eunsun</p>
-                    <p class="h2 mt-5 ww-title" style="font-family: 'Gugi', cursive; font-size:1.0em">
-                        | WE ARE GETTING MARRIED |
-                    </p>
-                    <p class="h2 mt-5 ww-title"
-                       style="font-family: 'Noto Serif KR', serif; font-size:1.0em; letter-spacing:-1px">
-                        <b style="font-size:1.4em;">2022. 05. 28. SAT PM 07:30</b>
-                        <br>서울 강남구 도곡로99길 16 트라디노이
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="ww-nav-bar sticky-top bg-light">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <button aria-controls="ww-navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-                            class="navbar-toggler"
-                            data-target="#ww-navbarNav" data-toggle="collapse" type="button">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse text-uppercase" id="ww-navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#couple">Couple</a></li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#events">Events</a></li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">Gallery</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="ww-section" id="couple">
-            <div class="container">
-                <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">신랑 & 신부</h2>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <div class="mt-3">
-                            <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
-                                장은선</h3>
-                            <img alt="Groom" class="img-fluid" src="images/pic11.jpg"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mt-3">
-                            <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
-                                이정표</h3>
-                            <img alt="Bride" class="img-fluid" src="images/pic16.jpg"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ww-section bg-light" id="events">
-            <div class="container ww-wedding-event">
-                <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">초대합니다</h2>
-                    <div class="col text-center mb-5">
-                        <h6 style="font-family: 'Noto Serif KR', serif;">
-                            <!-- 1463<br> -->
-                            오랜 시간 서로의 곁을 지켜온<br>
-                            저희 두 사람, 한 마음 되어<br>
-                            함께 맞이하는 열 번째 계절에<br>
-                            아름다운 서약을 맺으려 합니다.<br>
-                            오셔서 축복해 주시면 큰 기쁨이겠습니다
-                        </h6>
-                    </div>
-                <div class="row">
-                    <div class="col-md-7 col-sm-12">
-                        <div class="my-3">
-                            <div class="h4">웨딩 본식</div>
-                            <ul>
-                                <li>
-                                    <i class="text-muted fas fa-map-marker-alt"></i>
-                                    <span class="pl-2 text-muted">서울 강남구 도곡로99길 16 트라디노이</span>
-                                </li>
-                                <li class="pt-2">
-                                    <i class="text-muted far fa-calendar-alt"></i>
-                                    <span class="pl-2 text-muted">2022년 5월 28일, 7:30PM</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12">
-                        <div class="my-3">
-                            <img alt="Wedding Party" class="img-fluid" src="images/wedding-party.jpg"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-7 col-sm-12">
-                        <div class="my-3">
-                            <div class="h4">뒷풀이</div>
-                            <ul>
-                                <li>
-                                    <i class="text-muted fas fa-map-marker-alt "></i>
-                                    <span class="pl-2 text-muted">????????</span>
-                                </li>
-                                <li class="pt-2">
-                                    <i class="text-muted far fa-calendar-alt "></i>
-                                    <span class="pl-2 text-muted">2022년 5월 28일, 9:30PM - 12:00AM</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12">
-                        <div class="my-3"><img alt="Reception" class="img-fluid" src="images/reception.jpg"/></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="ww-section" id="gallery">
-            <div class="ww-photo-gallery">
-                <div class="container">
-                    <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">포토 갤러리</h2>
-                    <div class="ww-gallery">
-                        <div class="card-columns">
-                            <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 2" class="img-fluid" src="images/pic1.jpg"/>
-                                </a>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;vacation&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 3" class="img-fluid" src="images/pic2.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 4" class="img-fluid" src="images/pic3.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 5" class="img-fluid" src="images/pic4.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic5.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic6.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic7.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic8.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic9.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic10.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic11.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic12.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic13.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic14.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic15.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic16.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic17.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic18.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic19.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                        <img alt="Gallery Pic 2" class="img-fluid" src="images/pic20.jpg"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <section class="ww-section" id="gallery">
-            <h3
-              class="text-center pb-3 ww-title"
-              style="font-family: 'Noto Serif KR', serif"
-            >
-              갤러리
-            </h3>
-            <div id="nanogallery2">gallery_made_with_nanogallery2</div>
-            <script>
-              jQuery(document).ready(function () {
-                jQuery('#nanogallery2').nanogallery2({
-                  // ### gallery settings ###
-                  thumbnailHeight: 150,
-                  thumbnailWidth: 'auto',
-                  thumbnailDisplayTransition: 'slideUp2',
-                  thumbnailDisplayTransitionDuration: 500,
-                  thumbnailDisplayInterval: 30,
-                  galleryDisplayTransition: 'rotateX',
-                  galleryDisplayTransitionDuration: 500,
-                  thumbnailHoverEffect2: 'scale120',
-    
-                  // ### gallery content ###
-                  items: [
-                    {
-                      src: './images/pic1.jpg',
-                      srct: './images/pic1.jpg',
-                    },
-                    {
-                      src: './images/pic2.jpg',
-                      srct: './images/pic2.jpg',
-                    },
-                    {
-                      src: './images/CSH_0270_small.jpg',
-                      srct: './images/CSH_0270_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0303_small.jpg',
-                      srct: './images/CSH_0303_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0436_small.jpg',
-                      srct: './images/CSH_0436_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0480_small.jpg',
-                      srct: './images/CSH_0480_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0497_small.jpg',
-                      srct: './images/CSH_0497_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0501_small.jpg',
-                      srct: './images/CSH_0501_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0553_small.jpg',
-                      srct: './images/CSH_0553_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0554_small.jpg',
-                      srct: './images/CSH_0554_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0576_small.jpg',
-                      srct: './images/CSH_0576_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0617_small.jpg',
-                      srct: './images/CSH_0617_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0654_small.jpg',
-                      srct: './images/CSH_0654_small.jpg',
-                    },
-                    {
-                      src: './images/black_white_small.jpg',
-                      srct: './images/black_white_small.jpg',
-                    },
-                    {
-                      src: './images/black_white2_small.jpg',
-                      srct: './images/black_white2_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0686_small.jpg',
-                      srct: './images/CSH_0686_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0742_small.jpg',
-                      srct: './images/CSH_0742_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0814_small.jpg',
-                      srct: './images/CSH_0814_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0917_small.jpg',
-                      srct: './images/CSH_0917_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_0956_small.jpg',
-                      srct: './images/CSH_0956_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_1016_small.jpg',
-                      srct: './images/CSH_1016_small.jpg',
-                    },
-    
-                    {
-                      src: './images/CSH_1059_small.jpg',
-                      srct: './images/CSH_1059_small.jpg',
-                    },
-                    {
-                      src: './images/CSH_1115_small.jpg',
-                      srct: './images/CSH_1115_small.jpg',
-                    }
-                  ],
-                });
-              });
-        <!-- gallary test begin -->
-        <div class="ww-section" id="gallery">
-            <h3>gallery made with nanogallery2</h3>
-            <!-- ### position of the gallery ### -->
-            <div id="nanogallery2">gallery_made_with_nanogallery2</div>
-            <script type="text/javascript">
-                jQuery(document).ready(function () {
-                    jQuery("#nanogallery2").nanogallery2({
-                        // ### gallery settings ### 
-                        thumbnailHeight: 150,
-                        thumbnailWidth: 150,
-                        // ### gallery content ### 
-                        items: [
-                            { src: 'https://github.com/Jungpyo-L/Jungpyo_Eunsun_Wedding_Invitation/blob/2c3a6c03bc9d711cd8489442ad2f2619024244d8/docs/images/pic1_main.jpg', srct: 'https://github.com/Jungpyo-L/Jungpyo_Eunsun_Wedding_Invitation/blob/2c3a6c03bc9d711cd8489442ad2f2619024244d8/docs/images/pic1_main.jpg', title: 'Berlin 1' },
-                            { src: '/images/pic1.jpg', srct: 'images/pic1.jpg', title: 'Berlin 2' },
-                            { src: 'berlin3.jpg', srct: 'berlin3_t.jpg', title: 'Berlin 3' }
-                        ]
-                    });
-                });
-            </script>
-        </div>
-        <!-- gallart test end -->
-        <div class="ww-section ww-rsvp-detail" id="map">
-            <div class="container">
-                <div class="col text-center">
-                    <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">오시는 길</h2>
-                    <div>
-                        <h5 style="font-family: 'Noto Serif KR', serif;">트라디노이</h5>
-                        <h6 style="font-family: 'Noto Serif KR', serif;">(서울 강남구 도곡로99길 16)</h6>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-12">
-                        <div class="my-3 text-center">
-                            <a href="http://naver.me/5zJozzqz">
-                                <img alt="naver-map" class="map-icon" id="naver-map"
-                                     src="images/map/naver-map.png"/>
-                            </a>
-                            <a href="http://kko.to/0UB2XvYlD">
-                                <img alt="kakao-map" class="map-icon" id="kakao-map"
-                                     src="images/map/kakao-map.png"/>
-                            </a>
-                            <a href="https://goo.gl/maps/hrbwd6k2fKQAayCb9">
-                                <img alt="google-map" class="map-icon" id="google-map"
-                                     src="images/map/google-map.png"/>
-                            </a>
-                        </div>
-                        <div class="col text-center">
-                            <label style="font-family: 'Noto Serif KR', serif; font-size: 15px;">
-                                지하철 - 삼성역 3번 출구, 학여울역 1번 출구<br>
-                                버스 - 대치 2동 주민센서 하차<br>
-                                문의 - Tel. 02-567-9916
-                            </label>
-                        </div>
-                        <div class = "my-3">
-                            <div id="map" style="width:80%;height:60%;"></div>
-                                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c3404141690b2db0e651c61e76f34b1a"></script>
-                                <script>
-                                    var container = document.getElementById('map');
-                                    var options = {
-                                        center: new kakao.maps.LatLng(33.450701, 126.570667),
-                                    level: 3
-                                    };
-                                    var map = new kakao.maps.Map(container, options);
-                                </script>
-                            </div>
-                        </div>
-                        <!-- <div class="my-3">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.297439052569!2d129.1238775160104!3d35.1741384652207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356892c2513ecf5d%3A0x7d362ece2091e2f8!2z7IS87YWA7IKs7J207Ja47Iqk7YyM7YGsIOy7qOuypOyFmO2ZgA!5e0!3m2!1sko!2skr!4v1554092125630!5m2!1sko!2skr" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <title>이정표-장은선 Wedding</title>
+  </head>
+  <body>
+    <!-- <div class="homepage" id="top">
+      <div class="announcement-container">
+        <p class="title" style="
+                  font-family: 'Noto Serif KR', serif;
+                  font-size: 1.5em;
+                  letter-spacing: -1px;
+                  padding-top: 100px;
+                ">
+          이정표 ♥︎ 장은선
+        </p>
+        <p class="title" style="
+                  font-family: 'Noto Serif KR', serif;
+                  font-size: 1em;
+                  letter-spacing: -1px;
+                ">
+          <b style="font-size: 1em">2022. 05. 28. SAT 17:30PM</b>
+        </p>
+      </div>
     </div>
-</div>
-</div>
-<h1>gallery made with nanogallery2</h1>
+    </div> -->
+    <div class="ww-home-page" id="home">
+      <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
+        <div class="container ww-announcement-container">
+          <p class="ww-couple-name ww-title" style="font-size:4.0em">Jungpyo & Eunsun</p>
+          <p class="h2 mt-5 ww-title" style="font-family: 'Gugi', cursive; font-size:1.0em">
+            | WE ARE GETTING MARRIED |
+          </p>
+          <p class="h2 mt-5 ww-title" style="font-family: 'Noto Serif KR', serif; font-size:1.0em; letter-spacing:-1px">
+            <b style="font-size:1.4em;">2022. 05. 28. SAT PM 07:30</b>
+            <br>서울 강남구 도곡로99길 16 트라디노이
+          </p>
+        </div>
+      </div>
+    </div>
+<!--    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">-->
+<!--      <a class="navbar-brand"></a>-->
+<!--      <button-->
+<!--        class="navbar-toggler"-->
+<!--        type="button"-->
+<!--        data-toggle="collapse"-->
+<!--        data-target="#navbarSupportedContent"-->
+<!--        aria-controls="navbarSupportedContent"-->
+<!--        aria-expanded="false"-->
+<!--        aria-label="Toggle navigation"-->
+<!--      >-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--      </button>-->
 
-    <!-- ### position of the gallery ### -->
-    <div id="nanogallery2">gallery_made_with_nanogallery2</div>
+<!--      <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--        <ul class="navbar-nav mr-auto">-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-item nav-link" href="#top">Top</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-item nav-link" href="#events">Events</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-item nav-link" href="#gallery">Gallery</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-item nav-link" href="#heart">Heart</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-item nav-link" href="#location">Location</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-item nav-link" href="#share">Share</a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </nav>-->
 
-    <script>
-        jQuery(document).ready(function () {
+    <!--      신랑신부-->
+    <div class="ww-section " id="couple">
+      <div class="container">
+<!--        <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">신랑 & 신부</h2>-->
+        <h2 class="h4 text-center pb-3 ww-title head-color" style="font-family: 'Noto Serif KR', serif;">신랑 & 신부</h2>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <div class="mt-3">
+              <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
+                장은선</h3>
+              <img alt="Bride" class="img-fluid"
+                   src="./images/pic11.jpg"/>
+            </div>
+          </div>
 
-            jQuery("#nanogallery2").nanogallery2({
-                // ### gallery settings ### 
-                thumbnailHeight: 150,
-                thumbnailWidth: 150,
-                //itemsBaseURL: 'https://nanogallery2.nanostudio.org/samples/',
 
-                // ### gallery content ### 
-                items: [
-                    { src: 'images/pic1.jpg', srct: 'images/pic1.jpg',},
-                    { src: 'images/pic2.jpg', srct: 'images/pic2.jpg',},
-                    { src: 'images/pic3.jpg', srct: 'images/pic3.jpg',}
-                ]
+          <div class="col-md-6">
+            <div class="mt-3">
+              <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
+                이정표</h3>
+              <img alt="Groom" class="img-fluid"
+                   src="./images/pic16.jpg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <article>
+
+      <!--      초대합니다-->
+      <div class="ww-section bg-light-ivory white-color">
+        <div class="container ww-wedding-introduces">
+          <h2 class="h4 text-center pb-3 ww-title head-color" style="font-family: 'Noto Serif KR', serif;">초대합니다</h2>
+          <div class="col text-center mb-5">
+            <h6 style="font-family: 'Noto Serif KR', serif; line-height: 1.8em;">
+              <br>
+              오랜 시간 서로의 곁을 지켜온<br>
+              저희 두 사람, 한 마음 되어<br>
+              함께 맞이하는 열 번째 계절에<br>
+              아름다운 서약을 맺으려 합니다.<br>
+              오셔서 축복해 주시면 큰 기쁨이겠습니다.<br><br>
+<!--              각자 서로 다른 길을 걸어온 저희가<br>-->
+<!--              이제 부부의 연으로 한 길을 걸어가고자 합니다.<br>-->
+<!--              평생을 좋은 남편, 좋은 아내로 살겠습니다.<br>-->
+<!--              한 곳을 바라보며 첫발을 내딛습니다.<br><br>-->
+
+              <!-- 서로 하나가 되는 날,<br>
+              소중한 자리 함께 빛내주시면<br>
+              감사하겠습니다.<br><br>
+
+              함께하지 못하시는 분들도<br>
+              보내주시는 축하와 응원으로<br>
+              두 사람의 행복한 삶을<br>
+              꾸려가도록 하겠습니다.<br>
+              고맙습니다.<br> -->
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="ww-section bg-dark-ivory">
+        <div class="container ww-wedding-event text-center" style="font-family: 'Noto Serif KR', serif;">
+          <h3 class="h4 text-center pb-3 head-color">예식 안내</h3>
+          <div class="names"><span>웨딩 본식</span></div>
+          <ul class="address">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="pl-2 text-muted">서울 강남구 도곡로99길 16 트라디노이</span>
+            </li>
+            <li class="pt-2">
+              <i class="far fa-calendar-alt"></i>
+              <span class="pl-2 text-muted">2022년 5월 28일, 7:30 PM</span>
+            </li>
+          </ul>
+          <img alt="Wedding Party" class="img-fluid" src="images/wedding-party.jpg" width="70%"/><br><br><br><br>
+          <div class="names"><span>뒷풀이</span></div>
+          <ul class="address">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="pl-2 text-muted">서울 강남구 ~~~~파티룸</span>
+            </li>
+            <li class="pt-2">
+              <i class="far fa-calendar-alt"></i>
+              <span class="pl-2 text-muted">2022년 5월 28일, 9:30 PM</span>
+            </li>
+          </ul>
+          <img alt="Wedding Party" class="img-fluid" src="images/wedding-party.jpg" width="70%"/><br><br><br><br>
+        </div>
+      </div>
+
+<!--      오시는길-->
+      <section class="ww-section white-color" id="location">
+        <div
+                class="separator transparent"
+                style="margin-top: 35px; margin-bottom: 0px"
+        ></div>
+        <div class="container">
+          <div class="col text-center">
+            <h2 class="h4 text-center pb-3 ww-title head-color" style="font-family: 'Noto Serif KR', serif;">오시는 길</h2>
+            <div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-12">
+              <div class="my-3 text-center">
+                <a
+                        href="http://naver.me/5zJozzqz"
+                >
+                  <img
+                          alt="naver-map"
+                          class="map-icon"
+                          width="50"
+                          height="50"
+                          id="naver-map"
+                          src="images/map/naver-map.png"
+                  />
+                </a>
+                <a
+                        href="http://kko.to/0UB2XvYlD"
+                >
+                  <img
+                          alt="kakao-map"
+                          class="map-icon"
+                          width="50"
+                          height="50"
+                          id="kakao-map"
+                          src="images/map/kakao-map.png"
+                  />
+                </a>
+              </div>
+              <div class="my-3">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.259513577962!2d127.06381201621271!3d37.50179697981011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5532bc0e133%3A0x98187055c9b13e4a!2z7Yq4652865SU64W47J20IChUcmEgZGkgTm9pKQ!5e0!3m2!1sen!2sus!4v1650233946731!5m2!1sen!2sus"
+                        width="100%"
+                        height="400"
+                        frameborder="0"
+                        style="border: 0"
+                        allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="comming-introduce">
+            <div><span>지하철 이용시</span></div>
+            <div><span>&#183;</span>삼성역 3번 출구 도보로 8분</div>
+            <div><span>&#183;</span>학여울역 1번 출구 도보로 10분</div>
+            <br>
+            <div><span>버스 이용시</span></div>
+            <div><span>&#183;</span>대치 2동 주민센터 하차 시 1분 거리 위치</div>
+            <div><span># </span>마을버스: 강남 01, 강남 06</div>
+            <div><span>&#183;</span>휘문고, 대치 2동 주민센터 정거장 하차 시 좌측방향 2분 거리 위치</div>
+            <div><span># </span>간선: 401 / 지선: 4318, 4319, 4419 / 직행: 500-2, 9507, 9607 / 일반: 11-3, 917</div>
+
+            <br>
+            <div><span>네비게이션 이용시</span></div>
+            <div><span>&#183;</span>서울시 강남구 도곡로 99길 16 트라디노이 (도로명)</div>
+            <div><span>&#183;</span>서울시 강남구 대치동 984 트라디노이 (지번)</div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="ww-section" id="gallery">
+        <h3
+          class="text-center pb-3 ww-title"
+          style="font-family: 'Noto Serif KR', serif"
+        >
+          갤러리
+        </h3>
+        <div id="nanogallery2">gallery_made_with_nanogallery2</div>
+        <script>
+          jQuery(document).ready(function () {
+            jQuery('#nanogallery2').nanogallery2({
+              // ### gallery settings ###
+              thumbnailHeight: 150,
+              thumbnailWidth: 'auto',
+              thumbnailDisplayTransition: 'slideUp2',
+              thumbnailDisplayTransitionDuration: 500,
+              thumbnailDisplayInterval: 30,
+              galleryDisplayTransition: 'rotateX',
+              galleryDisplayTransitionDuration: 500,
+              thumbnailHoverEffect2: 'scale120',
+
+              // ### gallery content ###
+              items: [
+                {
+                  src: './images/pic1.jpg',
+                  srct: './images/pic1.jpg',
+                },
+                {
+                  src: './images/pic2.jpg',
+                  srct: './images/pic2.jpg',
+                },
+                {
+                  src: './images/pic3.jpg',
+                  srct: './images/pic3.jpg',
+                },
+                {
+                  src: './images/pic4.jpg',
+                  srct: './images/pic4.jpg',
+                },
+                {
+                  src: './images/pic5.jpg',
+                  srct: './images/pic5.jpg',
+                },
+                {
+                  src: './images/pic6.jpg',
+                  srct: './images/pic6.jpg',
+                },
+                {
+                  src: './images/pic7.jpg',
+                  srct: './images/pic7.jpg',
+                },
+                {
+                  src: './images/pic8.jpg',
+                  srct: './images/pic8.jpg',
+                },
+                {
+                  src: './images/pic9.jpg',
+                  srct: './images/pic9.jpg',
+                },
+                {
+                  src: './images/pic10.jpg',
+                  srct: './images/pic10.jpg',
+                },
+                {
+                  src: './images/pic11.jpg',
+                  srct: './images/pic11.jpg',
+                },
+                {
+                  src: './images/pic12.jpg',
+                  srct: './images/pic12.jpg',
+                },
+                {
+                  src: './images/pic13.jpg',
+                  srct: './images/pic13.jpg',
+                },
+                {
+                  src: './images/pic14.jpg',
+                  srct: './images/pic14.jpg',
+                },
+                {
+                  src: './images/pic15.jpg',
+                  srct: './images/pic15.jpg',
+                },
+                {
+                  src: './images/pic16.jpg',
+                  srct: './images/pic16.jpg',
+                },
+                {
+                  src: './images/pic17.jpg',
+                  srct: './images/pic17.jpg',
+                },
+                {
+                  src: './images/pic18.jpg',
+                  srct: './images/pic18.jpg',
+                },
+                {
+                  src: './images/pic19.jpg',
+                  srct: './images/pic19.jpg',
+                },
+                {
+                  src: './images/pic20.jpg',
+                  srct: './images/pic20.jpg',
+                }
+              ],
             });
-        });
-    </script>
-<footer></footer>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/parallax.min.js"></script>
-<script src="js/ekko-lightbox.min.js"></script>
-<script src="scripts/main.js"></script>
+          });
+        </script>
+<!--        <iframe width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+      </section>
 
-<div class="bottom_right"><i class="fa fa-arrow-up fa-2x" id="go-to-top"></i>
-</div>
+      <div class="ww-section bg-dark-ivory white-color">
+        <div class="remittance" id="remittance">
+          <h4 class="h4 pb-3 head-color">신랑 &amp; 신부에게 마음 전하기</h4>
+          <p class="remittance_sub_title"></p>
+          <div class="remittance_btn_bx">
+            <p class="btn_bx_1" id="btn_bx_1">
+              <span class="th">신랑&nbsp;&nbsp;</span>
+              <span class="td input_husband">이정표</span>
+              <a href="#" onclick="return false" class="h_btn">신랑측 계좌번호 보기</a>
+            </p>
+            <p class="btn_bx_2" id="btn_bx_2">
+              <span class="th">신부&nbsp;&nbsp;</span>
+              <span class="td input_wife">장은선</span>
+              <a href="#" onclick="return false" class="w_btn">신부측 계좌번호 보기</a>
+            </p>
+          </div>
+          <!-- 팝업 -->
+          <div class="remittance_pop_h" id="remittance_pop_h" style="display: none;">
+            <div class="remittance_pop_inner">
+              <div class="re_po re_grm_2">
+                <p class="account_h_c account_c" style="font-weight: bold; padding-top:8.2%;"><span class="GroomAccountRelationArea2"><span class="GroomAccountRelation2"></span> <span>계좌</span></span></p>
+                <p class="account_h_c account_c"> <span class="grm_account_bank2"></span> <span class="GroomAccountNameArea2">(예금주 : <span class="GroomAccountName2"></span>)</span></p>
+                <p class="account_num grm_account_num2" id="h_num2"></p>
+                <a class="copy_btn" onclick="copyToClipboard('h_num2')">복사하기</a>
+              </div>
+              <a class="close_btn" href="#" onclick="return false">닫기</a>
+            </div>
+          </div>
+          <div class="remittance_pop_w" id="remittance_pop_w" style="display: none;">
+            <div class="remittance_pop_inner">
+              <div class="re_po re_brd_2">
+                <p class="account_w_c account_c" style="font-weight: bold; padding-top:8.2%;"><span class="BrideAccountRelationArea2"><span class="BrideAccountRelation2"></span> <span>계좌</span></span></p>
+                <p class="account_w_c account_c"> <span class="brd_account_bank2"></span> <span class="BrideAccountNameArea2">(예금주 : <span class="BrideAccountName2"></span>)</span></p>
+                <p class="account_num brd_account_num2" id="w_num2"></p>
+                <a class="copy_btn" onclick="copyToClipboard('w_num2')">복사하기</a>
+              </div>
+              <a class="close_btn" href="#" onclick="return false">닫기</a>
+            </div>
+          </div>
+          <!-- 팝업 -->
+        </div>
+      </div>
 
-<div class="bottom_left">
-    <audio id="player" src="mus.mp3"></audio>
-    <div>
-        <i class="fa fa-music fa-2x" onclick="document.getElementById('player').play()"></i>
+    </article>
+
+    <div class="bottom_right">
+      <i class="fa fa-arrow-up fa-2x" id="go-to-top"></i>
     </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
 
-  <script src="js/clipboard.min.js"></script>
-
-</body>
+    <div class="bottom_left">
+      <audio id="player" src="mus.mp3"></audio>
+      <div>
+        <i
+          class="fa fa-music fa-2x"
+          onclick="document.getElementById('player').play()"
+        ></i>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
