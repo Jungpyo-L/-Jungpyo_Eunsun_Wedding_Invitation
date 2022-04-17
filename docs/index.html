@@ -79,11 +79,20 @@
                 $('#gifts').hide();
             }
         });
-
-
-
-
     </script>
+    <!--  From seongun-bosel-wedding -->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- nanogallery2 -->
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
+      type="text/css" />
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+  
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <meta name = "format-detection" content = "telephone=no">
+  
 </head>
 
 <body id="top">
@@ -204,7 +213,7 @@
                 </div>
             </div>
         </div>
-        <div class="ww-section" id="gallery">
+        <!-- <div class="ww-section" id="gallery">
             <div class="ww-photo-gallery">
                 <div class="container">
                     <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">포토 갤러리</h2>
@@ -314,7 +323,79 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+        <!-- gallary test begin -->
+    <div class="ww-section" id="gallery">
+        <h3 class="text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif">
+            갤러리
+        </h3>
+        <div id="nanogallery2">gallery_made_with_nanogallery2</div>
+        <script>
+            jQuery(document).ready(function () {
+                jQuery('#nanogallery2').nanogallery2({
+                    // ### gallery settings ###
+                    thumbnailHeight: 150,
+                    thumbnailWidth: 'auto',
+                    thumbnailDisplayTransition: 'slideUp2',
+                    thumbnailDisplayTransitionDuration: 500,
+                    thumbnailDisplayInterval: 30,
+                    galleryDisplayTransition: 'rotateX',
+                    galleryDisplayTransitionDuration: 500,
+                    thumbnailHoverEffect2: 'scale120',
+
+                    // ### gallery content ###
+                    items: [
+                        {
+                            src: '/images/pic1.jpg',
+                            srct: '/images/pic1.jpg',
+                        },
+                        {
+                            src: '/images/pic2.jpg',
+                            srct: '/images/pic2.jpg',
+                        },
+                        {
+                            src: '/images/pic3.jpg',
+                            srct: '/images/pic.jpg',
+                        },
+                        {
+                            src: '/images/pic4.jpg',
+                            srct: '/images/pic4.jpg',
+                        },
+                        {
+                            src: '/images/pic5.jpg',
+                            srct: '/images/pic5.jpg',
+                        },
+                        {
+                            src: '/images/pic6.jpg',
+                            srct: '/images/pic6.jpg',
+                        }
+                    ],
+                });
+            });
+        </script>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lnRIXAylUOM" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+        <!-- gallart test end -->
+        <!-- gallery test 2 -->
+        <h3>
+            nanogallery2 - define a photo gallery with the HTML markup method
+            <a href="https://nanogallery2.nanostudio.org/" target="_blank">[more...]</a>
+          </h3>
+          <div id="nanogallery2"
+              data-nanogallery2 = '{ 
+                "thumbnailWidth":   "auto",
+                  "thumbnailHeight":  200,
+                <!-- "itemsBaseURL":     "https://nanogallery2.nanostudio.org/samples/" -->
+              }'
+            >
+            <!-- content of the gallery -->
+            <a href="/images/pic5.jpg" data-ngthumb="/images/pic5.jpg">Berlin 1</a>
+            <a href="/images/pic6.jpg" data-ngthumb="/images/pic6.jpg">Berlin 2</a>
+            <a href="/images/pic7.jpg" data-ngthumb="/images/pic7.jpg">Berlin 3</a>
+          </div>
+          <!-- gallery test 2  -->
         <div class="ww-section ww-rsvp-detail" id="map">
             <div class="container">
                 <div class="col text-center">
