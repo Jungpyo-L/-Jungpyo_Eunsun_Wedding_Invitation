@@ -72,16 +72,18 @@
       rel="stylesheet"
     />
 
-    <title>이정표-장은선 Wedding</title>
+    <title>이정표 ♥︎ 장은선 결혼합니다</title>
   </head>
   <body>
-    <!-- <div class="homepage" id="top">
+    <div class="homepage" id="top">
       <div class="announcement-container">
         <p class="title" style="
                   font-family: 'Noto Serif KR', serif;
                   font-size: 1.5em;
                   letter-spacing: -1px;
                   padding-top: 100px;
+                  color: #fff;
+                  text-align: center;
                 ">
           이정표 ♥︎ 장은선
         </p>
@@ -89,13 +91,14 @@
                   font-family: 'Noto Serif KR', serif;
                   font-size: 1em;
                   letter-spacing: -1px;
+                  color: #fff;
+                  text-align: center;
                 ">
-          <b style="font-size: 1em">2022. 05. 28. SAT 17:30PM</b>
+          <b style="font-size: 1em">2022. 05. 28. SAT 7:30 PM</b>
         </p>
       </div>
     </div>
-    </div> -->
-    <div class="ww-home-page" id="home">
+    <!-- <div class="ww-home-page" id="top">
       <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
         <div class="container ww-announcement-container">
           <p class="ww-couple-name ww-title" style="font-size:4.0em">Jungpyo & Eunsun</p>
@@ -108,7 +111,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand"></a>
@@ -149,8 +152,9 @@
         <div class="row text-center">
           <div class="col-md-6">
             <div class="mt-3">
-              <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
-                장은선</h3>
+              <!-- <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
+                장은선</h3> -->
+              <div class="names" style=" font-family: 'Noto Serif KR', serif;"><span>장은선</span></div>
               <img alt="Bride" class="img-fluid"
                    src="./images/pic11.jpg"/>
             </div>
@@ -159,8 +163,9 @@
 
           <div class="col-md-6">
             <div class="mt-3">
-              <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
-                이정표</h3>
+              <!-- <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
+                이정표</h3> -->
+                <div class="names" style=" font-family: 'Noto Serif KR', serif;"><span>이정표</span></div>
               <img alt="Groom" class="img-fluid"
                    src="./images/pic16.jpg"/>
             </div>
@@ -289,19 +294,21 @@
 
           <div class="comming-introduce">
             <div><span>지하철 이용시</span></div>
-            <div><span>&#183;</span>삼성역 3번 출구 도보로 8분</div>
-            <div><span>&#183;</span>학여울역 1번 출구 도보로 10분</div>
+            <div>삼성역 3번 출구 도보로 8분</div>
+            <div>학여울역 1번 출구 도보로 10분</div>
             <br>
             <div><span>버스 이용시</span></div>
-            <div><span>&#183;</span>대치 2동 주민센터 하차 시 1분 거리 위치</div>
-            <div><span># </span>마을버스: 강남 01, 강남 06</div>
-            <div><span>&#183;</span>휘문고, 대치 2동 주민센터 정거장 하차 시 좌측방향 2분 거리 위치</div>
-            <div><span># </span>간선: 401 / 지선: 4318, 4319, 4419 / 직행: 500-2, 9507, 9607 / 일반: 11-3, 917</div>
+            <div>대치 2동 주민센터 하차 시 1분 거리 위치</div>
+            <div>마을버스: 강남 01, 강남 06</div><br>
+            <div>휘문고, 대치 2동 주민센터 정거장 하차 시 좌측방향 2분 거리 위치</div>
+            <div>간선: 401 / 지선: 4318, 4319, 4419 </div>
+            <div>직행: 500-2, 9507, 9607</div>
+            <div>일반: 11-3, 917</div>
 
             <br>
             <div><span>네비게이션 이용시</span></div>
-            <div><span>&#183;</span>서울시 강남구 도곡로 99길 16 트라디노이 (도로명)</div>
-            <div><span>&#183;</span>서울시 강남구 대치동 984 트라디노이 (지번)</div>
+            <div>서울시 강남구 도곡로 99길 16 트라디노이 (도로명)</div>
+            <div>서울시 강남구 대치동 984 트라디노이 (지번)</div>
           </div>
         </div>
       </section>
@@ -309,12 +316,13 @@
 
 
       <section class="ww-section" id="gallery">
-        <h3
+        <!-- <h3
           class="text-center pb-3 ww-title"
           style="font-family: 'Noto Serif KR', serif"
         >
           갤러리
-        </h3>
+        </h3> -->
+        <h3 class="h4 text-center pb-3 head-color">갤러리</h3>
         <div id="nanogallery2">gallery_made_with_nanogallery2</div>
         <script>
           jQuery(document).ready(function () {
@@ -328,6 +336,8 @@
               galleryDisplayTransition: 'rotateX',
               galleryDisplayTransitionDuration: 500,
               thumbnailHoverEffect2: 'scale120',
+              thumbnailL1BorderHorizontal: 0,
+              thumbnailL1BorderVertical: 0,
 
               // ### gallery content ###
               items: [
